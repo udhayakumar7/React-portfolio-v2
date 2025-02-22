@@ -112,13 +112,13 @@ const Loader = () => {
             initial="hidden"
             animate={["moveUp", "moveLeft"]}
             custom={[100, 0.1]}
-            className="text-white text-[60px] font-bold"
+            className="text-white md:text-[60px] text-[30px] font-bold"
           >
             CODEBY
           </motion.h1>
         </div>
 
-        <motion.div id="image-container" className="w-[200px] h-max relative">
+        <motion.div id="image-container" className="md:w-[200px] w-[100px] h-max relative">
           <motion.img
             variants={imageChange}
             initial="hidden"
@@ -157,7 +157,7 @@ const Loader = () => {
             initial="hidden"
             animate={["moveUp", "moveRight"]}
             custom={[100, 0.2]}
-            className="text-white text-[60px] font-bold"
+            className="text-white md:text-[60px] text-[30px] font-bold"
           >
             KUMAR
           </motion.h1>

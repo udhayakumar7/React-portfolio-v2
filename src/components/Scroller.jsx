@@ -28,8 +28,8 @@ const Scroller = () => {
   return (
     <div className='scroller w-full overflow-hidden' >
         <div className='h-full w-full flex items-center  whitespace-nowrap' ref={slider}>
-        <h1 ref={firstText} className=' flex items-center' > Design interaction between humans and brands <span className=' h-5 w-5 mx-3 bg-white  inline-block'></span></h1>
-        <h1 ref={secondText} className=' flex items-center shadow-text' >Design interaction between humans and brands <span className=' h-5 w-5 mx-3 bg-white inline-block'></span></h1>
+        <h1 ref={firstText} className=' flex items-center' > Design interaction between humans and brands <span className=' h-2.5 w-2.5  md:h-5 md:w-5 mx-3 bg-white  inline-block'></span></h1>
+        <h1 ref={secondText} className=' flex items-center shadow-text' >Design interaction between humans and brands <span className='h-2.5 w-2.5  md:h-5 md:w-5  mx-3 bg-white inline-block'></span></h1>
         </div>
 
     </div>

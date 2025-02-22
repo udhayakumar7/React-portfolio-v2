@@ -1,0 +1,193 @@
+
+:root{
+--text-86: 86px;
+--text-82: 82px;
+--text-80: 80px;
+--text-76: 76px;
+--text-72: 72px;
+--text-70: 70px;
+--text-68: 68px;
+--text-64: 64px;
+--text-62: 62px;
+--text-60: 60px;
+--text-58: 58px;
+--text-56: 56px;
+--text-52: 52px;
+--text-50: 50px;
+--text-48: 48px;
+--text-44: 48px;
+--text-42: 42px;
+--text-41: 41px;
+--text-40: clamp(1.25rem, 0.9211rem + 1.7544vw, 2.5rem);
+--text-36: 36px;
+--text-32: 32px;
+--text-30: clamp(1.125rem, 0.9276rem + 1.0526vw, 1.875rem);
+--text-28:  clamp(1.375rem, 1.2763rem + 0.5263vw, 1.75rem);
+--text-26: clamp(1.1875rem, 1.0724rem + 0.614vw, 1.625rem);
+--text-24: 24px;
+--text-22: clamp(1.125rem, 1.0592rem + 0.3509vw, 1.375rem);
+--text-20: 20px;
+--text-18: clamp(1rem, 0.9671rem + 0.1754vw, 1.125rem);
+--text-16: 16px;
+--text-14: 14px;
+}
+
+
+.mobile-menu-ham{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #000;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* transform: scale(1); */
+    z-index: 99;
+    display: none;
+    
+  }
+
+   .ham-burger{
+    position: relative;
+   }
+  .ham-burger::before{
+    content: '';
+    height: 1px;
+    width: 25px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 8px;
+    transition: transform 0.3s;
+  }
+  .ham-burger::after{
+    content: '';
+    height: 1px;
+    width: 25px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 8px;
+    transition: transform 0.3s;
+   
+  }
+
+  .ham-burger.add-class::after{
+    top: 20px;
+    left: 8px;
+    transform: rotate(-45deg);
+  }
+
+  .ham-burger.add-class::before{
+    top: 20px;
+    left: 8px;
+    transform: rotate(45deg);
+  }
+  .svgCurve{
+    position: absolute;
+    top: 0;
+    left: -99px;
+    width: 100px;
+    height: 100%;
+    fill: rgb(255, 255, 255);
+    stroke: none;
+}
+
+
+.menu{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    right: 0;
+    top: 0;
+    color: white;
+    z-index: 9;
+    width: 100%;
+    /* backdrop-filter: blur(8px); */
+
+}
+.menu .link{
+    padding-top: 40px;
+}
+  .menu  .body{
+        box-sizing: border-box;
+        height: 100%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+       
+    
+    .menu .nav{
+            display: flex;
+            flex-direction: column;
+            font-size: 46px;
+            margin-top: 20px;
+            width: 100%;
+        }
+            
+        
+  
+
+           
+            .menu  a{
+                text-decoration: none;
+                color: #000;
+                font-family: "md-bol-c";
+                display: block;
+                border-bottom: 2px solid rgb(0, 0, 0);
+                font-size: 2.8rem !important;
+
+            }
+
+            .header .link:last-child a{
+               
+                font-size: 2rem !important;
+                background-color: #000;
+                border: .14em solid #000;
+                padding: .5rem 1rem !important;
+                color: #fff;
+                cursor: pointer;
+                transition: 0.3s all ease-in-out;
+                border-radius: 5px;
+                width: fit-content;
+            }
+
+
+
+            .curve {
+                position: relative; 
+            }
+            
+            .curve svg, .curve .background {
+                position: fixed;
+                height: calc(100vh + 600px);
+                width: 100vw;
+                pointer-events: none;
+                left: 0;
+                top: 0;
+            }
+            
+            .curve .background {
+                background-color: black;
+                transition: opacity 0s linear 0.1s;
+            }
+            
+            .curve .route {
+                position: absolute;
+                left: 50%;
+                top: 40%;
+                color: white;
+                font-size: 46px;
+                z-index: 3;
+                transform: translateX(-50%);
+                text-align: center;
+                
+            }
+            
+            
+            

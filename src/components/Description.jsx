@@ -42,11 +42,11 @@ const Description = () => {
   }, []);
 
   return (
-    <div ref={descriptionRef} className="container container-padding section-gap mx-auto  py-16   description-content"
+    <div ref={descriptionRef} className="container container-padding section-gap mx-auto  md:py-16   description-content"
     >
-      <div className="grid grid-cols-12 gap-8">
+      <div className="grid grid-cols-12 mg:gap-8">
         {/* Staggered Animated Text */}
-        <div className="col-span-7">
+        <div className="md:col-span-7 col-span-12">
           <p className="tagline flex flex-wrap text-2xl font-semibold leading-snug text-black">
             {phrase.split(" ").map((word, index) => (
               <span
@@ -61,7 +61,7 @@ const Description = () => {
         </div>
 
         {/* Additional Animated Paragraph */}
-        <div className="col-span-5">
+        <div className="md:col-span-5 col-span-12 mt-3.5 md:mt-0">
           <p ref={textRef} className="text-lg text-black leading-relaxed">
             The combination of my passion for design, code & interaction
             positions me in a unique place in the web design world.

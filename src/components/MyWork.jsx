@@ -106,8 +106,8 @@ const MyWork = () => {
 
         <div className='container container-padding mx-auto'>
             <h2 className='section_heading mb-10'>Recent Work</h2>
-            <div className='grid grid-cols-12'>
-            <div className="col-start-2 col-end-12">
+            <div className='grid grid-cols-12 desktop-version'>
+            <div className="col-start-1 col-end-13">
                 <>
 
                 {projects.map((project, index) => {
@@ -150,6 +150,27 @@ const MyWork = () => {
             </div>
 
             </div>
+             <div className="grid grid-col-12 mobile-version">
+              
+                 {projects.map((project, index) => (
+
+                  <div className='col-span-12 mb-10' key={project.title}>
+                    <div className={`bg-gray-200 py-14 px-5`}>
+                      <img className='w-full h-full object-cover' src={project.src} alt={project.title} />
+
+
+                    </div>
+                    <h2>{project.title}</h2>
+                    <p>Design & Development</p>
+
+
+                  </div>
+
+                 ))}
+              
+              
+             </div>
+
         </div>
       
     </div>

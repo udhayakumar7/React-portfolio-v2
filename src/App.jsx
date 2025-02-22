@@ -1,23 +1,26 @@
 
 import './App.css';
-import Description from './components/Description'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Loader from './components/Loader'
-import MyWork from './components/MyWork';
-import Scroller from './components/Scroller'
+import Home from './pages/Home';
+import "locomotive-scroll/locomotive-scroll.css";
+import LocomotiveScroll from "locomotive-scroll";
+import { Route, Routes } from 'react-router-dom';
+import About from './pages/About';
+import ShowCase from './pages/ShowCase';
 
 function App() {
-  
+  const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <>
-   <Loader />
-   <Header />
-   <Hero />
-   <Scroller />
-   <Description />
-   <MyWork />
+
+    <Routes>
+      <Route path='/' index element={  <Home />} />
+      <Route path='/about' index element={  <About />} />
+      <Route path='/show-case' index element={  <ShowCase />} />
+
+    </Routes>
+    
+   
  
   
     </>
