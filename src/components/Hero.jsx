@@ -37,7 +37,7 @@ const Hero = () => {
                 <motion.p initial={{ y: 20 }}  animate={{ y: 0 }} transition={{ type: "tween", duration: 1 , ease: "easeOut", delay: 3.4  }} >👋, my name is kumar and I am a freelance</motion.p>
                 <motion.h2 initial={{ x: 800 }}  animate={{ x: 0 }} transition={{ type: "tween", duration: 2 , ease: "easeOut", delay: 3.4 }} >Webdeveloper</motion.h2>
                 <motion.h3 initial={{ x: -800 }}  animate={{ x: 0 }} transition={{ type: "tween", duration: 2 , ease: "easeOut", delay: 3.4 }}>&Programmer</motion.h3>
-                <motion.span initial={{ x: -800 }}  animate={{ x: 0 }} transition={{ type: "tween", duration: 2 , ease: "easeOut", delay: 3.4 }} className='location mt-2'>based in Tamil Nadu, India.</motion.span>
+                <motion.span initial={{ x: -800 }}  animate={{ x: 0 }} transition={{ type: "tween", duration: 2 , ease: "easeOut", delay: 3.4 }} className='location mt-2'>based in India.</motion.span>
                 <div className='text-center flex items-center justify-center gap-3 mt-6'>
                     <button className='primary-btn'>Hire me!✌️</button>
                     {/* <button className='primary-btn-outline'> together✌️</button> */}

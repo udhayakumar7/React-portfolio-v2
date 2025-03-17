@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Description = () => {
   const phrase =
-    "Together, we’ll break boundaries and create experiences that resonate. With a focus on design, functionality, and interaction, I help brands stand out and make a meaningful impact in today’s digital world.";
+    "Creative Web Developer with 3+ years of experience in web development and UI design. Specializing in building custom websites and user interfaces, I bring a versatile skill set and a passion for creating engaging, responsive digital experiences. With expertise in front-end and back-end development, I focus on delivering seamless, visually appealing, and functional web solutions that meet the needs of modern businesses";
 
   const descriptionRef = useRef(null);
   const wordsRef = useRef([]);
@@ -46,7 +46,7 @@ const Description = () => {
     >
       <div className="grid grid-cols-12 mg:gap-8">
         {/* Staggered Animated Text */}
-        <div className="md:col-span-7 col-span-12">
+        <div className="md:col-span-7 col-span-12 md:pe-16">
           <p className="tagline flex flex-wrap text-2xl font-semibold leading-snug text-black">
             {phrase.split(" ").map((word, index) => (
               <span
@@ -63,8 +63,8 @@ const Description = () => {
         {/* Additional Animated Paragraph */}
         <div className="md:col-span-5 col-span-12 mt-3.5 md:mt-0">
           <p ref={textRef} className="text-lg text-black leading-relaxed">
-            The combination of my passion for design, code & interaction
-            positions me in a unique place in the web design world.
+          I thrive at the intersection of design and code, combining beautiful visuals with cutting-edge web technology.
+          Currently working independently, I help companies and organizations from around the world to bring their ideas to life in ways that add value and delight their audiences.
           </p>
         </div>
       </div>

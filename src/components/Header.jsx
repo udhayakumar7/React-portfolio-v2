@@ -32,10 +32,10 @@ const Header = () => {
 
     <div className="bg-white py-4  fixed w-full top-0 z-2 nav">
       <div className="flex items-center  justify-between container-padding container mx-auto">
-        <h1 className="">Codebykumar</h1>
+        <h1 className=""><Link to={'/'}> Codebykumar</Link></h1>
         <ul className="md:flex items-center  hidden">
           <li className="  "><Link to={'/about'}> About Me</Link></li>
-          <li className="  "><Link to={'/show-case'}> Showcase </Link> </li>
+          <li className="  "><Link to={'/works'}> Works </Link> </li>
           <li className="nav-btn "><Link to={'/'}> Let's connect </Link></li>
         </ul>
 
