@@ -22,13 +22,13 @@ const Footer = () => {
             </div>
 
             <div className='grid grid-cols-12 mt-20 add-styles-tab '>
-                <div className='md:col-span-2 col-span-6 col-expand-6'>
+                <div className='md:col-span-2 col-span-6 col-expand-6 mt-5'>
                     <h6 className='text-[#dbdbdb] mb-3 font-medium'>VERSION</h6>
                     <p className=' text-white font-medium'>&copy;2024 Editon</p>
                 </div>
-                <div className='md:col-span-2 col-span-6 text-right md:text-left col-expand-6 tex-tab-right'>
+                <div className='md:col-span-2 col-span-6 text-right md:text-left col-expand-6 tex-tab-right  mt-5'>
                     <h6 className='text-[#dbdbdb] mb-3 font-medium'>LOCAL TIME</h6>
-                    <p className=' text-white font-medium'>2:57 AM</p>
+                    <p className='text-white font-medium'>{new Date().toLocaleTimeString()}</p>
                 </div>
                 <div className='md:col-start-10 col-span-12 mt-5 col-expand-12'>
                     <h6 className='text-[#dbdbdb] mb-3 font-medium'>SOCIALS</h6>

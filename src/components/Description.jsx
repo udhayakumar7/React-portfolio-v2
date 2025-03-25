@@ -44,7 +44,7 @@ const Description = () => {
   return (
     <div ref={descriptionRef} className="container container-padding section-gap mx-auto  md:py-16   description-content"
     >
-      <div className="grid grid-cols-12 mg:gap-8">
+      <div className="grid grid-cols-12 md:gap-8">
         {/* Staggered Animated Text */}
         <div className="md:col-span-7 col-span-12 md:pe-16">
           <p className="tagline flex flex-wrap text-2xl font-semibold leading-snug text-black">
@@ -73,3 +73,7 @@ const Description = () => {
 };
 
 export default Description;
+
+
+
+
