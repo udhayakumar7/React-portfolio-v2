@@ -39,11 +39,18 @@
   }
 }
 
+.idea-section{
+  background-color: #000;
+}
+.idea-section .section_heading{
+  color: #fff !important;
+}
 .skills-card{
     background-color: #fff;
     border: 1px solid #cecece;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
     /* position: relative; */
+    padding: 30px;
 }
 .skills-card p{
   position: absolute;
@@ -77,10 +84,22 @@
   font-family: 'md-black-c';
   display: none;
 }
+.skills-card h3{
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'md-black-c';
+  margin-bottom: 12px;
+}
+.skills-card h6{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Wix Madefor Display", sans-serif;
+  
+}
 .tech-row h3{
   font-size: 80px;
   font-weight: 500;
-  font-family: Arial, Helvetica, sans-serif;
+   font-family: "Wix Madefor Display", sans-serif;
   color: #000;
   border-bottom: 2px solid #000;;
   text-transform: uppercase;
@@ -131,7 +150,7 @@
     
 }
 .nav ul li{
-    font-family: Arial, Helvetica, sans-serif;
+     font-family: "Wix Madefor Display", sans-serif;
     font-weight: 400;
     font-size: 1.16rem;
    padding-left: 32px;
@@ -194,7 +213,7 @@
  .hero-banner-container p{
      text-align: center;
      font-size: var(--text-22);
-     font-family: Arial, Helvetica, sans-serif;
+      font-family: "Wix Madefor Display", sans-serif;
      font-weight: 300;
      color: #333;
  }
@@ -249,7 +268,7 @@
      bottom: -34px;
      left: 0; */
      font-size: var(--text-22);
-     font-family: Arial, Helvetica, sans-serif;
+      font-family: "Wix Madefor Display", sans-serif;
      font-weight: 400;
      color: #000;
  }
@@ -265,12 +284,55 @@
 
 
  /* desc  */
+.text-big span{
+  font-size: 38px !important;
+  font-weight: 300 !important;
+  color: #000 !important;
+  line-height: 1.2em;
+ 
+  
+  /* text-transform: uppercase; */
+}
+.info h6{
+  font-size: 18px;
+   font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 500;
+  color: #232323;
+}
+.info h5{
+  font-size: 18px;
+   font-family: "Wix Madefor Display", sans-serif;
+  font-weight: 500;
+  color: #232323;
+  margin-top: 4px;
 
+}
+.info h5 a{
+    position: relative;
+    display: block;
+    padding-bottom: 4px;
+    transition: 0.20s all ease;
+    
+}
+.info h5 a::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px ;
+  width: 100%;
+  background-color: #cccccc;
 
+}
+.info h5:hover a::after{
+  background-color: #000;
+ 
+}
  .description-content p{
-    font-size: var(--text-22);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
+    font-size: 18px;
+     font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+    color: #232323;
  }
  .description-content p:nth-of-type(1){
     gap: 6px;
@@ -332,7 +394,7 @@
   }
   .project p{
     font-size: var(--text-20);
-    font-family: Arial, Helvetica, sans-serif;
+     font-family: "Wix Madefor Display", sans-serif;
     margin: 0;
     color: #222;
   }
@@ -382,7 +444,7 @@
   font-size: 14px;
   font-weight: 300;
   pointer-events: none;
-  font-family: Arial, Helvetica, sans-serif;
+   font-family: "Wix Madefor Display", sans-serif;
 }
 
 .cursorLabel{
@@ -441,7 +503,7 @@
   font-weight: 500 !important;
 }
 .connections p a{
-  font-family: Arial, Helvetica, sans-serif;
+   font-family: "Wix Madefor Display", sans-serif;
   color: #fff;
   font-size: var(--text-24);
   font-weight: 300;
@@ -462,7 +524,7 @@
  .mobile-version p{
   font-size: 18px;
   margin-top: 6px;
-  font-family: Arial, Helvetica, sans-serif;
+   font-family: "Wix Madefor Display", sans-serif;
 
  }
 
@@ -537,11 +599,17 @@
 /* about */
 
 .about-me p{
-  font-size: 21px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
   line-height: 1.5em;
-  font-family: Arial, Helvetica, sans-serif;
+   font-family: "Wix Madefor Display", sans-serif;
   margin-bottom: 20px;
+  color: #222;
+}
+
+.about-me p.bio_1{
+  color: #505050 !important;
+  /* font-weight: 400 !important; */
 }
 .mobile-hidden{
   display: block;

@@ -44,45 +44,18 @@ const About = () => {
 
   const Skills = [ 
     {
-      image: '/images/html.png',
-      name: 'HTML',
-      // bg: 'rgba(227, 79, 38, 1)', // HTML Primary color with opacity
+      name: 'Understand',
+      content:"I start by getting to know the project inside and out. This means meetings with the team to understand their goals and what they hope to achieve",
     },
     {
-      image: '/images/css.png',
-      name: 'CSS',
-      // bg: 'rgba(38, 61, 255, 0.2)', // CSS Primary color with opacity
+      name: 'Ideation',
+      content:"I use user flows, sketches, and storyboards to visualise the user journey and ensure the visual design is effective.",
     },
     {
-      image: '/images/js.png',
-      name: 'JavaScript',
-      // bg: 'rgba(255, 221, 51, 0.2)', // JS Primary color with opacity
+      name: 'Visual design',
+      content:"In the visual design phase, I turn my ideas into reality. This is where I create the actual look and feel of the product, including the user interface, prototypes, and interactive elements.",
     },
-    {
-      image: '/images/reactjs.png',
-      name: 'React.js',
-      // bg: 'rgba(97, 218, 251, 0.2)', // React Primary color with opacity
-    },
-    {
-      image: '/images/nextjs.svg',
-      name: 'Next.js',
-      // bg: 'rgba(0, 0, 0, 0.2)', // Next.js Primary color with opacity
-    },
-    {
-      image: '/images/sass.svg',
-      name: 'Sass',
-      // bg: 'rgba(214, 45, 89, 0.2)', // Sass Primary color with opacity
-    },
-    {
-      image: '/images/tailwind-css.svg',
-      name: 'Tailwind CSS',
-      // bg: 'rgba(56, 189, 248, 0.2)', // Tailwind Primary color with opacity
-    },
-    {
-      image: '/images/gsap-1.svg',
-      name: 'GSAP',
-      // bg: 'rgba(38, 176, 234, 0.2)', // GSAP Primary color with opacity
-    },
+  
   ]
   
 
@@ -125,79 +98,62 @@ const About = () => {
         <div className="container-padding container mx-auto">
           <div className="grid grid-cols-12 md:gap-8 pt-20">
 
-            <div className="md:col-span-12 col-span-12 md:pe-16 about-me">
-              <p id="bio">
-                Hey there! 👋 I’m Kumar, a passionate React Developer with over 3 years of experience in building dynamic, scalable, and high-performance web applications. ⚛️💻 My journey revolves around creating seamless user interfaces and crafting robust front-end solutions that empower users and teams alike. 🚀
+          <div className="md:col-span-12 col-span-12  about-me">
+              <p id="bio" className="bio_head">
+                I'm glad you stopped by to learn more about me. I'm a passionate
+                React front-end developer from India, dedicated to crafting
+                intuitive and engaging user interfaces. Whether you're here out
+                of curiosity or looking for collaboration, welcome!
               </p>
-              <p id="bio">
-                Throughout my career, I’ve had the opportunity to work on a variety of projects—from small startups to larger enterprises—helping to bring products to life with clean, maintainable code and efficient React components. 🔧✨ I specialize in React.js, Redux, and modern front-end technologies, always staying on top of the latest trends and best practices in the React ecosystem. 📚🔍
+              <p id="bio" className="bio_head">
+                My name is Kumar. I'm a developer, video game geek, and a
+                serious foodie. I also enjoy dabbling in the kitchen (and I’ve
+                been told I’m not too bad at it). Oh, and when I'm not coding or
+                gaming, you'll probably find me geeking out over the latest tech
+                or sci-fi stuff!
               </p>
-              <p id="bio">
-                I’m a strong advocate for writing reusable, modular code, and I thrive in environments that foster collaboration and knowledge-sharing. 💬🤝 Whether it's optimizing performance, integrating APIs, or building responsive layouts, I’m always focused on delivering an exceptional user experience. 🖥️📱
+
+              <p id="bio" className="bio_head">
+                <b>Becoming a Developer </b>
               </p>
-              <p id="bio">
-                When I’m not coding, you’ll probably catch me exploring new JavaScript frameworks, diving into developer podcasts 🎙️, or testing out new tools and technologies. 🔧💡 I’m also a fan of community-driven learning and love contributing to open-source projects. 🌍❤️
+              <p id="bio" className="bio_1">
+                My journey into development began with curiosity and a drive to
+                build things that make an impact. Over the past 3 years, I've
+                grown from a beginner learning the basics on YouTube to a
+                confident front-end developer working on real-world projects.
+                I’m a self-motivated learner — constantly exploring new
+                technologies, reading documentation, and pushing myself to stay
+                updated with the latest trends in web development. Most of what
+                I’ve learned came from online resources, tutorials, and hands-on
+                practice, which has helped me build a strong foundation in React
+                and front-end technologies. This journey hasn’t just been about
+                writing code — it’s also about solving problems, thinking
+                creatively, and learning every single day. And honestly, I
+                wouldn’t want it any other way
               </p>
-              <p id="bio">
-                Looking forward to connecting with like-minded devs and building the future of web applications together! 🌟
+              <p id="bio" className="bio_head">
+                <b>  Personal Interests </b>
               </p>
+              <p id="bio" className="bio_1">
+              In my free time, I enjoy cooking, watercolor painting, listening to dubstep, traveling, and watching sci-fi movies. For a break from the city noise, I love taking walks in the local park—an activity I'd recommend to anyone.
+              </p>
+
             </div>
-
-           
-
           </div>
         </div>
 
-       
 
-        <div className='section-gap skills-section mobile-hidden'>
+        <div className='section-gap idea-section hidden'>
           <div className='container container-padding mx-auto'>
-        <h2 className='section_heading mb-0'>Tech Stack</h2>
-
-        {/* Infinite Marquee container */}
-        <div className="stack-row overflow-hidden relative mt-10">
-          {/* Duplicate the array for infinite loop effect */}
-          {Skills.map((skill, index) => (
-              <div
-                className="skills-card-1 rounded-lg flex flex-col items-center justify-center"
-                key={skill.name + index}
-              >
-                <img
-                  className="max-w-[100px] "
-                  src={skill.image}
-                  alt={skill.name}
-                />
-                <p>{skill.name}</p>
-              </div>
-            ))}
-        </div>
-       
-        
-        </div>
-       
-
-            
-
-        </div>
-
-
-        <div className='section-gap skills-section mobile-show'>
-          <div className='container container-padding mx-auto'>
-        <h2 className='section_heading mb-0'>Tech Stack</h2>
-        <div ref={container} className="h-screen w-full flex items-center justify-center  overflow-x-hidden">
-          <div className="relative w-72  h-[300px]" >
+        <h2 className='section_heading mb-0'>Process</h2>
+        <div ref={container} className="h-[600px] w-full flex items-center justify-center  overflow-hidden">
+          <div className="relative w-[800px]  h-[400px]" >
             {
               Skills.map((skill) => (
                 <>
-                <div className="card skills-card rounded-lg flex items-center justify-center" >
-                <img
-                className="max-w-[140px]"
-                  key={skill.name}
-                  // className="skill-item"
-                  src={skill.image}
-                  alt={skill.name}
-                />
-                <p>{skill.name}</p>
+                <div className="card skills-card rounded-lg " >
+                <h3>{skill.name}</h3>
+                <h6>{skill.content}</h6>
                 </div>
                 
                 </>

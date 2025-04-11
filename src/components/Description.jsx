@@ -1,13 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
 const Description = () => {
   const phrase =
-    "Creative Web Developer with 3+ years of experience in web development and UI design. Specializing in building custom websites and user interfaces, I bring a versatile skill set and a passion for creating engaging, responsive digital experiences. With expertise in front-end and back-end development, I focus on delivering seamless, visually appealing, and functional web solutions that meet the needs of modern businesses";
+    "Passionate about building websites with react, focusing on clean design, usability, and performance.";
 
   const descriptionRef = useRef(null);
   const wordsRef = useRef([]);
@@ -42,12 +43,15 @@ const Description = () => {
   }, []);
 
   return (
-    <div ref={descriptionRef} className="container container-padding section-gap mx-auto  md:py-16   description-content"
+    <div ref={descriptionRef} className="container container-padding section-gap mx-auto  md:pb-16   description-content"
     >
+      
       <div className="grid grid-cols-12 md:gap-8">
         {/* Staggered Animated Text */}
-        <div className="md:col-span-7 col-span-12 md:pe-16">
-          <p className="tagline flex flex-wrap text-2xl font-semibold leading-snug text-black">
+        <div className="md:col-start-1 md:col-end-9 ">
+          <div className="flex flex-col justify-between h-full">
+
+          <p className="tagline flex flex-wrap text-2xl font-semibold leading-snug text-black text-big">
             {phrase.split(" ").map((word, index) => (
               <span
                 key={index}
@@ -58,15 +62,40 @@ const Description = () => {
               </span>
             ))}
           </p>
+          </div>
+        
+
+
         </div>
 
         {/* Additional Animated Paragraph */}
-        <div className="md:col-span-5 col-span-12 mt-3.5 md:mt-0">
+        {/* <div className="md:col-start-3 md:col-end-13 mt-3.5 md:mt-0">
           <p ref={textRef} className="text-lg text-black leading-relaxed">
           I thrive at the intersection of design and code, combining beautiful visuals with cutting-edge web technology.
           Currently working independently, I help companies and organizations from around the world to bring their ideas to life in ways that add value and delight their audiences.
           </p>
-        </div>
+          <p ref={textRef} className="text-lg text-black leading-relaxed mt-8">
+          I thrive at the intersection of design and code, combining beautiful visuals with cutting-edge web technology.
+          Currently working independently.
+          </p>
+          <p ref={textRef} className="text-lg text-black leading-relaxed mt-8">
+          I thrive at the intersection of design and code, combining beautiful visuals with cutting-edge web technology.
+          </p>
+          <div className="flex items-center gap-10 info mt-10">
+            <div>
+                <h6>Product Developement</h6>
+                <h5>Frontend Engineer</h5>
+            </div>
+            <div>
+                <h6>Say hello</h6>
+                <h5><Link>kumar.dev@gmail.com</Link> </h5>
+            </div>
+            <div>
+                <h6 className="" style={{visibility: "hidden"}}>ssd</h6>
+                <h5><Link>Explore LinkedIn</Link></h5>
+            </div>
+          </div>
+        </div> */}
       </div>
     </div>
   );
