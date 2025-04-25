@@ -134,7 +134,7 @@ const Loader = () => {
             animate="show"
             custom={2.2}
             className="object-cover"
-            src="https://w0.peakpx.com/wallpaper/295/216/HD-wallpaper-che-guevara-che-guevara-revolution.jpg"
+            src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="image-loader"
           />
           <motion.img
@@ -144,7 +144,7 @@ const Loader = () => {
             custom={5}
             transition={{ delay: 3, duration: 0.6, ease: "easeInOut" }}
             className="object-cover"
-            src="https://4kwallpapers.com/images/wallpapers/eat-sleep-code-1080x1920-16019.png"
+            src="https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="image-loader"
           />
           
