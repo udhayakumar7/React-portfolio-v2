@@ -3,29 +3,34 @@ import gsap from "gsap";
 import { useState, useEffect, useRef } from "react";
 import React from 'react'
 import Projects from './Projects';
+import { Link } from 'react-router-dom';
 
 const MyWork = () => {
 
     const projects = [
         {
           title: "Ecommerce",
-          src: "https://tse4.mm.bing.net/th?id=OIP.Ce2m8qM-qT6o1vVpH-0OrAHaEo&pid=Api&P=0&h=180",
+          src: "images/ecommerce.png",
           color: "#706D63",
+          link: "https://boltz-head.netlify.app/",
         },
         {
           title: "Portfolio",
-          src: "https://cdn.photographylife.com/wp-content/uploads/2014/06/Nikon-D810-Image-Sample-6.jpg",
+          src: "images/portfolio.png",
           color: "#8C8C8C",
+          link :"https://portfolio-gsap-kumar.netlify.app/"
         },
         {
           title: "Movie app",
-          src: "https://tse3.mm.bing.net/th?id=OIP.9nXsUmBntvg_xZ_39pljogHaDt&pid=Api&P=0&h=180",
+          src: "images/movieapp.png",
           color: "#EFE8D3",
+          link: "https://newdisney.netlify.app/"
         },
         {
           title: "CRM",
-          src: "https://tse2.mm.bing.net/th?id=OIP.iAZA6wk3EEJgfJWbJ830ugHaEb&pid=Api&P=0&h=180",
+          src: "images/crm.png",
           color: "#706D63",
+          link: "https://crm-admin-new.netlify.app/"
         },
       ];
 
@@ -102,7 +107,7 @@ const MyWork = () => {
       };
 
   return (
-    <div className='section-gap'>
+    <div className='section-gap' id="works">
 
         <div className='container container-padding mx-auto'>
             <h2 className='section_heading mb-10'>Recent Work</h2>
@@ -112,12 +117,14 @@ const MyWork = () => {
 
                 {projects.map((project, index) => {
                 return (
+                  <Link to={project.link} rel="noreferrer"  target="_blank">
                   <Projects
                     index={index}
                     title={project.title}
                     manageModal={manageModal}
                     key={index}
                   />
+                  </Link>
                 );
               })}
                 
@@ -133,7 +140,7 @@ const MyWork = () => {
                     <img 
                     src={src}
                     width={300}
-                    
+                    style={{objectPosition:"top center"}}
                     alt="image"
                     />
                     
@@ -153,7 +160,7 @@ const MyWork = () => {
              <div className="grid grid-col-12 mobile-version">
               
                  {projects.map((project, index) => (
-
+                      <Link rel="noreferrer" target="_blank" r to={project.link}>
                   <div className='col-span-12 mb-10' key={project.title}>
                     <div className={`bg-gray-200 py-14 px-5`}>
                       <img className='w-full h-full object-cover' src={project.src} alt={project.title} />
@@ -165,6 +172,7 @@ const MyWork = () => {
 
 
                   </div>
+                  </Link>
 
                  ))}
               

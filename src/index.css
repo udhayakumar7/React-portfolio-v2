@@ -329,9 +329,9 @@
  
 }
  .description-content p{
-    font-size: 18px;
+    font-size: 20px;
      font-family: "Wix Madefor Display", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     color: #232323;
  }
  .description-content p:nth-of-type(1){
@@ -453,11 +453,16 @@
 
 .section_heading{
     font-family: md-black-c;
-    font-size: var(--text-70);
+    font-size: var(--text-50);
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-
+.section_sub_heading{
+    font-family: md-black-c;
+    font-size: var(--text-50);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
 .footer-section {
   padding-top: 50px;
@@ -617,6 +622,24 @@
 .mobile-show{
   display: none;
 }
+
+.exptable table{
+  width: 100%;
+}
+.exptable table td{
+  padding: 6px;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 18px;
+}
+.exptable table tr td:nth-child(odd){
+   color: #505050 !important;
+     font-weight: 500;
+}
+   
+.exptable table tr td:nth-child(even){
+   color: #222 !important;
+   font-weight: 500;
+}
 /* responsove for home  */
 
 @media screen and (max-width: 992px) {
@@ -627,7 +650,12 @@
   .mobile-show{
     display: block;
   }
+  .mobile-version img{
 
+    height: 300px;
+    object-position: top center;
+    
+  }
 }
   
 
@@ -795,6 +823,10 @@
 
 @media screen and (max-width: 540px){
 
+  .description-content p{
+    text-align: justify;
+  }
+
   .container-padding{
     
     padding-left: 1.5rem;
@@ -842,6 +874,11 @@
 
     font-size: 19px;
     font-weight: 500;
+    white-space: nowrap;    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block; 
+    max-width: 186px;
   
   }
 
@@ -857,7 +894,12 @@
    display: none;
  }
  .section_heading{
-  font-size: 40px;
+  font-size: 36px;
+  margin-bottom: 20px !important;
+ }
+ .exptable table tr td:nth-child(odd){
+  padding-left: 0px;
+  padding-right: 12px;
  }
  .mobile-menu-ham{
   display: block !important;
@@ -865,7 +907,9 @@
  .hero-banner-container h3{
   text-shadow: 1px 1px 0 #8c8c8c, -1px -1px 0 #8c8c8c, 1px -1px 0 #8c8c8c, -1px 1px 0 #8c8c8c;
  }
-
+.description-content p{
+  font-size: 18px;
+}
 }
 
 

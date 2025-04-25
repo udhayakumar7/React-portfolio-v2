@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from "motion/react"
 import HeroImage from '../assets/hero-1.png'
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
 
@@ -34,12 +35,12 @@ const Hero = () => {
     <div className='h-screen w-full  relative '>
         <div className='container mx-auto flex items-center relative justify-center h-full w-full'>
             <div className='hero-banner-container' >
-                <motion.p initial={{ y: 20 }}  animate={{ y: 0 }} transition={{ type: "tween", duration: 1 , ease: "easeOut", delay: 3.4  }} >👋, my name is kumar and I am a freelance</motion.p>
+                <motion.p initial={{ y: 20 }}  animate={{ y: 0 }} transition={{ type: "tween", duration: 1 , ease: "easeOut", delay: 3.4  }} >👋, My name is kumar and I am </motion.p>
                 <motion.h2 initial={{ x: 800 }}  animate={{ x: 0 }} transition={{ type: "tween", duration: 2 , ease: "easeOut", delay: 3.4 }} >Webdeveloper</motion.h2>
-                <motion.h3 initial={{ x: -800 }}  animate={{ x: 0 }} transition={{ type: "tween", duration: 2 , ease: "easeOut", delay: 3.4 }}>&Programmer</motion.h3>
+                <motion.h3 initial={{ x: -800 }}  animate={{ x: 0 }} transition={{ type: "tween", duration: 2 , ease: "easeOut", delay: 3.4 }}>&Webdesigner</motion.h3>
                 <motion.span initial={{ x: -800 }}  animate={{ x: 0 }} transition={{ type: "tween", duration: 2 , ease: "easeOut", delay: 3.4 }} className='location mt-2'>based in India.</motion.span>
                 <div className='text-center flex items-center justify-center gap-3 mt-6'>
-                    <button className='primary-btn'>Hire me!✌️</button>
+                    <Link to={'mailto:kumarpersonalacc11@gmail.com'}><button className='primary-btn'>Hire me!✌️</button></Link>
                     {/* <button className='primary-btn-outline'> together✌️</button> */}
                     
                 </div>

@@ -18,16 +18,16 @@ const MobileNav = () => {
         },
         {
           title: "About Me",
-          href: "/about",
+          href: "#about",
         },
         {
-          title: "Showcase",
-          href: "/show-case",
+          title: "Works",
+          href: "#works",
         },
         {
         
             title: "Let's Connect",
-            href: "/show-case",
+            href: "/",
          
         }
       ]

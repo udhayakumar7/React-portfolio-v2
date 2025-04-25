@@ -34,9 +34,9 @@ const Header = () => {
       <div className="flex items-center  justify-between container-padding container mx-auto">
         <h1 className=""><Link to={'/'}> Codebykumar</Link></h1>
         <ul className="md:flex items-center  hidden">
-          <li className="  "><Link to={'/about'}> About Me</Link></li>
-          <li className="  "><Link to={'/works'}> Works </Link> </li>
-          <li className="nav-btn "><Link to={'/'}> Let's connect </Link></li>
+          <li className="  "><a href={'#about'}> About Me</a></li>
+          <li className="  "><a href={'#works'}> Works </a> </li>
+          <li className="nav-btn "><Link to={'mailto:kumarpersonalacc11@gmail.com'}> Let's connect </Link></li>
         </ul>
 
         <div className="mobile-menu-ham" ref={button} onClick={toggleMenu}>

@@ -14,8 +14,8 @@ const Footer = () => {
             <div className='grid grid-cols-12'>
                 <div className="col-start-2 col-end-12">
                 <div className='connections md:flex  flex-col md:flex-row items-center justify-center mt-12 gap-12'>
-                    <p><Link to={'/'}>kumardev@gmail.com</Link></p>
-                    <p className='mt-5 md:mt-0'><Link to={'/'}>+91 63796 22144</Link></p>
+                    <p><Link to={'mailto:kumarpersonalacc11@gmail.com'}>kumarpersonalacc11@gmail.com</Link></p>
+                    <p className='mt-5 md:mt-0'><Link to={'tel:6379622144'}>+91 63796 22144</Link></p>
                 </div>
                 </div>
                 
@@ -32,9 +32,9 @@ const Footer = () => {
                 </div>
                 <div className='md:col-start-10 col-span-12 mt-5 col-expand-12'>
                     <h6 className='text-[#dbdbdb] mb-3 font-medium'>SOCIALS</h6>
-                    <Link className='text-white md:mr-15 mr-3  font-medium'  to={'/'}>LinkedIn</Link>
-                    <Link className='text-white md:mr-15 mr-3   font-medium' to={'/'}>Instagram</Link>
-                    <Link className='text-white md:mr-15 mr-3  font-medium' to={'/'}>Whatsapp</Link>
+                    <Link rel="noreferrer"  target="_blank" className='text-white md:mr-15 mr-3  font-medium'  to={'https://www.linkedin.com/in/kumar-d85985a18a'}>LinkedIn</Link>
+                    <Link rel="noreferrer"  target="_blank" className='text-white md:mr-15 mr-3   font-medium' to={'https://www.instagram.com/ig_udhaya_kumar'}>Instagram</Link>
+                    <Link rel="noreferrer"  target="_blank" className='text-white md:mr-15 mr-3  font-medium' to={'https://api.whatsapp.com/send?phone=6379622144'}>Whatsapp</Link>
                 </div>
 
             </div>
